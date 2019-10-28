@@ -46,6 +46,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_ui:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "8251d58cdd7aba761078b6115d1c7138c3f92340"
+      url: "git://github.com/flutter-jp/flutter_ui.git"
+    source: git
+    version: "0.0.1"
   matcher:
     dependency: transitive
     description:

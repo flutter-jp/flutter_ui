@@ -2,7 +2,7 @@ name: flutter_ui
 description: A Flutter UI package.
 version: 0.0.1
 author: xiaomo <hupengbest@gmail.com>
-homepage: https://ui.flutter-jp.com
+homepage: https://github.com/flutter-jp/flutter_ui
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
