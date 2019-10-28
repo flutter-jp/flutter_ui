@@ -1,3 +1,3 @@
-## [0.0.7] - TODO: Add release date.
+## [0.0.6] - TODO: Add release date.
 
 * add ui widget and description.
