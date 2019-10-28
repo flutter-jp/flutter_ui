@@ -1,6 +1,7 @@
 name: flutter_ui
-description: A Flutter UI package.
-version: 0.0.3
+description: A Flutter UI package,include `action sheet`,`badge`,`button`,`check list`,`datetime picker`,
+  `field`,`index list` etc...
+version: 0.0.6
 author: xiaomo <hupengbest@gmail.com>
 homepage: https://github.com/flutter-jp/flutter_ui
 
@@ -11,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   webview_flutter: ^0.3.15+1
-
+  cached_network_image: ^1.1.2+1
 
 dev_dependencies:
   flutter_test:
