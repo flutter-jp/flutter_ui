@@ -1,6 +1,6 @@
-import 'package:example/components/action_sheet.dart';
-import 'package:example/router.dart';
-import 'package:example/components/toast.dart';
+import 'package:example/components/action_sheet_demo.dart';
+import 'package:example/components/toast_demo.dart';
+import 'package:example/config/router.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

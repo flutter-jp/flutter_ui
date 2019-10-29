@@ -1,73 +1,91 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/entity.dart';
 
 class MActionSheet {
-  static show(
+  static final double itemHeight = 60;
+
+  static showConfirm(
       {@required BuildContext context,
       @required Function callback,
-      @required String title,
-      @required String subTitle}) {
-    showCupertinoModalPopup(
+      String confirmLabel = 'Yes',
+      String cancelLabel = 'No'}) {
+    List<SheetAction> actions = [
+      SheetAction(
+        title: confirmLabel,
+        pressCallback: () => callback(),
+      ),
+      SheetAction(
+          title: cancelLabel,
+          pressCallback: () => Navigator.pop(context),
+          selected: true),
+    ];
+
+    showModalBottomSheet(
         context: context,
-        builder: (BuildContext context) => CupertinoActionSheet(
-              title: Text(title),
-              message: Text(subTitle),
-              actions: [
-                CupertinoActionSheetAction(
-                  child: const Text('Yes'),
-                  isDefaultAction: true,
-                  onPressed: () => callback(),
-                ),
-                CupertinoActionSheetAction(
-                  child: const Text('No'),
-                  onPressed: () {
-                    Navigator.pop(context, 'No');
-                  },
-                )
-              ],
-            ));
+        builder: (BuildContext context) {
+          return Container(
+              height: itemHeight * 2,
+              child: Column(
+                children: <Widget>[
+                  ListView.builder(
+                      shrinkWrap: true,
+                      itemExtent: itemHeight,
+                      itemCount: actions.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        SheetAction action = actions[index];
+                        return ListTile(
+                            onTap: action.pressCallback,
+                            title: Text(
+                              action.title,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black),
+                            ));
+                      }),
+                ],
+              ));
+        });
   }
 
-  static showCustom(
+  static show(
       {@required BuildContext context,
-      @required List<MAction> actions,
-      @required String title,
-      @required String subTitle,
+      @required List<SheetAction> actions,
       bool hasCancel = false}) {
-    showCupertinoModalPopup(
+    var length = hasCancel ? actions.length + 1 : actions.length;
+    showModalBottomSheet(
         context: context,
-        builder: (BuildContext context) => CupertinoActionSheet(
-              title: Text(title),
-              message: Text(subTitle),
-              actions: _buildActions(context, actions, hasCancel),
-            ));
+        builder: (BuildContext context) {
+          return Container(
+            height: length * itemHeight,
+            child: Column(
+              children: <Widget>[
+                _buildActions(context, actions, hasCancel),
+              ],
+            ),
+          );
+        });
   }
 
-  static List<Widget> _buildActions(
-      BuildContext context, List<MAction> actions, bool hasCancel) {
-    List<Widget> list = List<Widget>();
-    for (var action in actions) {
-      list.add(CupertinoActionSheetAction(
-          onPressed: action.pressCallback, child: Text(action.title)));
-    }
-
+  static ListView _buildActions(
+      BuildContext context, List<SheetAction> actions, bool hasCancel) {
     if (hasCancel) {
-      list.add(CupertinoActionSheetAction(
-        child: const Text('Cancel'),
-        isDefaultAction: true,
-        onPressed: () {
-          Navigator.pop(context, 'Cancel');
-        },
-      ));
+      actions.add(SheetAction(
+          title: 'Cancel',
+          selected: true,
+          pressCallback: () => Navigator.pop(context, 'Cancel')));
     }
-
-    return list;
+    return ListView.builder(
+        shrinkWrap: true,
+        itemExtent: itemHeight,
+        itemCount: actions.length,
+        itemBuilder: (BuildContext context, int index) {
+          SheetAction action = actions[index];
+          return ListTile(
+              onTap: action.pressCallback,
+              title: Text(
+                action.title,
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.black),
+              ));
+        });
   }
-}
-
-class MAction {
-  String title;
-  Function pressCallback;
-
-  MAction({this.title, this.pressCallback});
 }

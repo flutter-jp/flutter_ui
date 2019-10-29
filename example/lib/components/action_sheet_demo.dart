@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/cupertino.dart';
+import 'package:flutter_ui/entity.dart';
 import 'package:flutter_ui/material.dart';
 
 class ActionSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var actions = [
-      CAction(
+      SheetAction(
           title: 'Apple',
           pressCallback: () {
             {
@@ -14,19 +15,19 @@ class ActionSheet extends StatelessWidget {
               MToast.show(msg: 'apple');
             }
           }),
-      CAction(
+      SheetAction(
           title: 'Banana',
           pressCallback: () {
             Navigator.of(context).pop();
             MToast.show(msg: 'Banana');
           }),
-      CAction(
+      SheetAction(
           title: 'Orange',
           pressCallback: () {
             Navigator.of(context).pop();
             MToast.show(msg: 'Orange');
           }),
-      CAction(
+      SheetAction(
           title: 'Watermelon',
           pressCallback: () {
             Navigator.of(context).pop();
@@ -41,9 +42,9 @@ class ActionSheet extends StatelessWidget {
         child: Column(
           children: <Widget>[
             RaisedButton(
-              child: Text('action sheet'),
+              child: Text('cupertino action sheet'),
               onPressed: () => {
-                CActionSheet.show(
+                CActionSheet.showConfirm(
                     title: 'yes or no',
                     subTitle: 'please choose',
                     context: context,
@@ -54,13 +55,36 @@ class ActionSheet extends StatelessWidget {
               },
             ),
             RaisedButton(
-              child: Text('custom action sheets'),
+              child: Text('cupertino custom action sheets'),
               onPressed: () => {
-                CActionSheet.showCustom(
+                CActionSheet.show(
                     context: context,
                     actions: actions,
                     title: 'fruits',
                     subTitle: 'please choosed one of them')
+              },
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
+            RaisedButton(
+              child: Text('material action sheet'),
+              onPressed: () => {
+                MActionSheet.showConfirm(
+                    context: context,
+                    callback: () {
+                      Navigator.pop(context);
+                      print('you choosed Yes');
+                    })
+              },
+            ),
+            RaisedButton(
+              child: Text('material custom action sheets'),
+              onPressed: () => {
+                MActionSheet.show(
+                  context: context,
+                  actions: actions,
+                )
               },
             )
           ],

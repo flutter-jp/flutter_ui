@@ -1,12 +1,14 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter_ui/entity.dart';
 
 class CActionSheet {
-  static show(
+  static showConfirm(
       {@required BuildContext context,
       @required Function callback,
       @required String title,
-      @required String subTitle}) {
+      @required String subTitle,
+      String confirmLabel = 'Yes',
+      String cancelLabel = 'No'}) {
     showCupertinoModalPopup(
         context: context,
         builder: (BuildContext context) => CupertinoActionSheet(
@@ -14,23 +16,23 @@ class CActionSheet {
               message: Text(subTitle),
               actions: [
                 CupertinoActionSheetAction(
-                  child: const Text('Yes'),
+                  child: Text(confirmLabel),
                   isDefaultAction: true,
                   onPressed: () => callback(),
                 ),
                 CupertinoActionSheetAction(
-                  child: const Text('No'),
+                  child: Text(cancelLabel),
                   onPressed: () {
-                    Navigator.pop(context, 'No');
+                    Navigator.pop(context, cancelLabel);
                   },
                 )
               ],
             ));
   }
 
-  static showCustom(
+  static show(
       {@required BuildContext context,
-      @required List<CAction> actions,
+      @required List<SheetAction> actions,
       @required String title,
       @required String subTitle,
       bool hasCancel = false}) {
@@ -44,7 +46,7 @@ class CActionSheet {
   }
 
   static List<Widget> _buildActions(
-      BuildContext context, List<CAction> actions, bool hasCancel) {
+      BuildContext context, List<SheetAction> actions, bool hasCancel) {
     List<Widget> list = List<Widget>();
     for (var action in actions) {
       list.add(CupertinoActionSheetAction(
@@ -63,11 +65,4 @@ class CActionSheet {
 
     return list;
   }
-}
-
-class CAction {
-  String title;
-  Function pressCallback;
-
-  CAction({this.title, this.pressCallback});
 }

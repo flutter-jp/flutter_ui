@@ -4,7 +4,7 @@ A new Flutter UI Example application.
 
 ## Getting Started
 
-1. [ActionSheet](/example/lib/components/action_sheet.dart)
+1. [ActionSheet](/example/lib/components/action_sheet_demo.dart)
 
 normal action sheet
 ```dart
@@ -24,7 +24,7 @@ custom action sheet
 
 ```dart
         var actions = [
-          CAction(
+          SheetAction(
               title: 'Apple',
               pressCallback: () {
                 {
@@ -32,19 +32,19 @@ custom action sheet
                   MToast.show(msg: 'apple');
                 }
               }),
-          CAction(
+          SheetAction(
               title: 'Banana',
               pressCallback: () {
                 Navigator.of(context).pop();
                 MToast.show(msg: 'Banana');
               }),
-          CAction(
+          SheetAction(
               title: 'Orange',
               pressCallback: () {
                 Navigator.of(context).pop();
                 MToast.show(msg: 'Orange');
               }),
-          CAction(
+          SheetAction(
               title: 'Watermelon',
               pressCallback: () {
                 Navigator.of(context).pop();
@@ -54,7 +54,7 @@ custom action sheet
       
 
       _onPressed(){
-      	CActionSheet.showCustom(
+      	ActionSheet.showCustom(
             context: context,
             actions: actions,
             title: 'fruits',
@@ -63,7 +63,7 @@ custom action sheet
 
 ```                                        
 
-2. [Toast](/example/lib/components/toast.dart)
+2. [Toast](/example/lib/components/toast_demo.dart)
 
 ```dart
   // where you want to show toast,please do like this.
