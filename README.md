@@ -9,9 +9,39 @@ A Flutter UI package.
 3. if you want to use Cupertino UI,the UI Component name Start with `C`
 `import 'package:flutter_ui/cupertino.dart'`;
 
+# UI Feature
+- `action sheet`
+- `avatar`
+- `badge`
+- `button`
+- `card`
+- `checklist`
+- `picker`
+- `datetime picker`
+- `divider`
+- `header`
+- `image`
+- `input`
+- `indicator`
+- `infinite scroll`
+- `load more`
+- `message box`
+- `picker`
+- `pricing`
+- `tooltip`
+- `progress`
+- `radio`
+- `rating`
+- `search`
+- `slider`
+- `social icon`
+- `swipe`
+- `switch`
+- `toast`
+- `markdown`
+- `browser`
+
 # Demo
-
-
 1. [ActionSheet](/example/lib/components/action_sheet.dart)
 
 normal action sheet
@@ -81,34 +111,3 @@ custom action sheet
     }
 ```
 
-# UI Feature
-- `action sheet`
-- `avatar`
-- `badge`
-- `button`
-- `card`
-- `checklist`
-- `picker`
-- `datetime picker`
-- `divider`
-- `header`
-- `image`
-- `input`
-- `indicator`
-- `infinite scroll`
-- `load more`
-- `message box`
-- `picker`
-- `pricing`
-- `tooltip`
-- `progress`
-- `radio`
-- `rating`
-- `search`
-- `slider`
-- `social icon`
-- `swipe`
-- `switch`
-- `toast`
-- `markdown`
-- `browser`
