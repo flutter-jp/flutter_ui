@@ -1,7 +1,7 @@
 name: flutter_ui
 description: A Flutter UI package,include action sheet,badge,button,check list,datetime picker,
   field,index list etc...
-version: 0.0.6
+version: 0.0.8
 author: xiaomo <hupengbest@gmail.com>
 homepage: https://github.com/flutter-jp/flutter_ui
 

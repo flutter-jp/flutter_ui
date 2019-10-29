@@ -5,8 +5,7 @@ class Toast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     void _pressed(String message, MPosition position) {
-      MToast.show(
-          msg: message, position: position, length: MToastLength.SHORT);
+      MToast.show(msg: message, position: position, length: MToastLength.SHORT);
     }
 
     return Scaffold(
