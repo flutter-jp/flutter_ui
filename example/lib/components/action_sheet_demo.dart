@@ -42,7 +42,7 @@ class ActionSheet extends StatelessWidget {
         child: Column(
           children: <Widget>[
             RaisedButton(
-              child: Text('cupertino action sheet'),
+              child: Text('cupertino confirm action sheet'),
               onPressed: () => {
                 CActionSheet.showConfirm(
                     title: 'yes or no',
@@ -68,7 +68,7 @@ class ActionSheet extends StatelessWidget {
               color: Colors.grey,
             ),
             RaisedButton(
-              child: Text('material action sheet'),
+              child: Text('material confirm action sheet'),
               onPressed: () => {
                 MActionSheet.showConfirm(
                     context: context,
