@@ -27,7 +27,7 @@ A Flutter UI package.
 - `rating`
 - `search`
 - `slider`
-- `socal icon`
+- `social icon`
 - `swipe`
 - `switch`
 - `toast`

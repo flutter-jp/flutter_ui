@@ -1,3 +1,4 @@
+import 'package:example/components/action_sheet.dart';
 import 'package:example/router.dart';
 import 'package:example/components/toast.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
-      routes: {Router.toast: (context) => Toast()},
+      routes: {
+        Router.actionSheet: (context) => ActionSheet(),
+        Router.toast: (context) => Toast(),
+      },
     );
   }
 }
@@ -29,11 +33,17 @@ class MyHomePage extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           ListTile(
-            leading: Icon(FontAwesomeIcons.diagnoses),
+            leading: Icon(FontAwesomeIcons.shekelSign, color: Colors.blue),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            title: Text('action sheet'),
+            onTap: () => Navigator.of(context).pushNamed(Router.actionSheet),
+          ),
+          Divider(color: Colors.grey),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.tag, color: Colors.blue),
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('toast'),
-            onTap: () =>
-                Navigator.of(context).pushNamed(Router.toast),
+            onTap: () => Navigator.of(context).pushNamed(Router.toast),
           ),
           Divider(color: Colors.grey),
         ],

@@ -4,42 +4,41 @@ import 'package:flutter_ui/material.dart';
 class Toast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-	  return Scaffold(
-		  appBar: AppBar(
-			  title: Text('toast'),
-		  ),
-		  body: Center(
-			  child: Column(
-				  mainAxisAlignment: MainAxisAlignment.center,
-				  children: <Widget>[
-					  RaisedButton(
-						  child: Text('top toast'),
-						  onPressed: () => FjToast.show(
-								  msg: 'top test',
-								  position: FjPosition.TOP,
-								  length: FjToastLength.SHORT),
-					  ),
-					  RaisedButton(
-						  child: Text('center toast'),
-						  onPressed: () => FjToast.show(
-								  msg: 'center test',
-								  position: FjPosition.CENTER,
-								  length: FjToastLength.SHORT),
-					  ),
-					  RaisedButton(
-						  child: Text('bottom toast'),
-						  onPressed: () => FjToast.show(
-								  msg: 'bottom test',
-								  position: FjPosition.BOTTOM,
-								  length: FjToastLength.SHORT),
-					  ),
-					  RaisedButton(
-						  child: Text('cancel'),
-						  onPressed: () => FjToast.cancel(),
-					  )
-				  ],
-			  ),
-		  ),
-	  );
+    void _pressed(String message, MPosition position) {
+      MToast.show(
+          msg: message, position: position, length: MToastLength.SHORT);
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('toast'),
+      ),
+      body: Center(
+          child: GridView.count(
+        crossAxisCount: 1,
+        padding: EdgeInsets.all(10),
+        mainAxisSpacing: 5,
+        crossAxisSpacing: 5,
+        childAspectRatio: 8 / 1,
+        children: <Widget>[
+          RaisedButton(
+            child: Text('top toast'),
+            onPressed: () => _pressed('top toast', MPosition.TOP),
+          ),
+          RaisedButton(
+            child: Text('center toast'),
+            onPressed: () => _pressed('center toast', MPosition.CENTER),
+          ),
+          RaisedButton(
+            child: Text('bottom toast'),
+            onPressed: () => _pressed('bottom toast', MPosition.BOTTOM),
+          ),
+          RaisedButton(
+            child: Text('cancel'),
+            onPressed: () => MToast.cancel(),
+          )
+        ],
+      )),
+    );
   }
 }
