@@ -1,15 +1,8 @@
-# flutter ui
-
+![banner](/image/banner.png)
+### flutter ui
 A Flutter UI package.
 
-# How to Use
-1. add `flutter_ui` to your `pubspec.yaml`
-2. if you want to use Material UI,the UI Component name Start with `M`
-`import 'package:flutter_ui/material.dart';`, but if you 
-3. if you want to use Cupertino UI,the UI Component name Start with `C`
-`import 'package:flutter_ui/cupertino.dart'`;
-
-# UI Feature
+### UI Feature
 - `action sheet`
 - `avatar`
 - `badge`
@@ -41,7 +34,14 @@ A Flutter UI package.
 - `markdown`
 - `browser`
 
-# Demo
+### How to Use
+1. add `flutter_ui` to your `pubspec.yaml`
+2. if you want to use Material UI,the UI Component name Start with `M`
+`import 'package:flutter_ui/material.dart';`, but if you 
+3. if you want to use Cupertino UI,the UI Component name Start with `C`
+`import 'package:flutter_ui/cupertino.dart'`;
+
+### Demo
 1. [ActionSheet](/example/lib/components/action_sheet.dart)
 
 normal action sheet
