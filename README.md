@@ -101,7 +101,7 @@ custom action sheet
 
 ```                                        
 
-1. [Toast](/example/lib/components/toast.dart)
+2. [Toast](/example/lib/components/toast.dart)
 
 ```dart
   // where you want to show toast,please do like this.
