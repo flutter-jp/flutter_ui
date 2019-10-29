@@ -19,9 +19,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^8.5.0
   flutter_ui:
-    git:
-      url: git://github.com/flutter-jp/flutter_ui.git
+    path:
+      ../
 
 
   # The following adds the Fj Icons font to your application.

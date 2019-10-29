@@ -28,3 +28,6 @@ export 'material/material_switch.dart';
 export 'material/material_toast.dart';
 export 'material/material_markdown.dart';
 export 'material/material_browser.dart';
+export 'material/material_steps.dart';
+export 'material/material_timeline.dart';
+export 'material/material_gmap.dart';
