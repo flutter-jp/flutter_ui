@@ -110,3 +110,6 @@ custom action sheet
     }
 ```
 
+
+### License
+[MIT](/LICENSE)
