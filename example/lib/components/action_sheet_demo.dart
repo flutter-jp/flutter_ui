@@ -9,6 +9,7 @@ class ActionSheet extends StatelessWidget {
     var actions = [
       SheetAction(
           title: 'Apple',
+          beforeIcon: Icons.ac_unit,
           pressCallback: () {
             {
               Navigator.of(context).pop();
@@ -17,18 +18,21 @@ class ActionSheet extends StatelessWidget {
           }),
       SheetAction(
           title: 'Banana',
+          beforeIcon: Icons.brightness_4,
           pressCallback: () {
             Navigator.of(context).pop();
             MToast.show(msg: 'Banana');
           }),
       SheetAction(
           title: 'Orange',
+          beforeIcon: Icons.voicemail,
           pressCallback: () {
             Navigator.of(context).pop();
             MToast.show(msg: 'Orange');
           }),
       SheetAction(
           title: 'Watermelon',
+          beforeIcon: Icons.brightness_4,
           pressCallback: () {
             Navigator.of(context).pop();
             MToast.show(msg: 'Watermelon');

@@ -12,10 +12,12 @@ class MActionSheet {
     List<SheetAction> actions = [
       SheetAction(
         title: confirmLabel,
+        beforeIcon: Icons.check,
         pressCallback: () => callback(),
       ),
       SheetAction(
           title: cancelLabel,
+          beforeIcon: Icons.close,
           pressCallback: () => Navigator.pop(context),
           selected: true),
     ];
@@ -34,10 +36,11 @@ class MActionSheet {
                       itemBuilder: (BuildContext context, int index) {
                         SheetAction action = actions[index];
                         return ListTile(
+                            leading: Icon(action.beforeIcon),
+                            trailing: Icon(action.afterIcon),
                             onTap: action.pressCallback,
                             title: Text(
                               action.title,
-                              textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.black),
                             ));
                       }),
@@ -80,10 +83,11 @@ class MActionSheet {
         itemBuilder: (BuildContext context, int index) {
           SheetAction action = actions[index];
           return ListTile(
+              leading: Icon(action.beforeIcon),
+              trailing: Icon(action.afterIcon),
               onTap: action.pressCallback,
               title: Text(
                 action.title,
-                textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.black),
               ));
         });
