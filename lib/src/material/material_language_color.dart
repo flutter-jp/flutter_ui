@@ -28,7 +28,7 @@ class MLanguageColor extends StatelessWidget {
   }
 }
 
-class MLanguage {
+class MLanguages {
   static const Color CEnterprise = Color(0xff814CCC);
   static const Color ABAP = Color(0xffE8274B);
   static const Color ABNF = Color(0xff000000);
