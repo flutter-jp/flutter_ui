@@ -1,5 +1,6 @@
 import 'package:example/components/action_sheet_demo.dart';
 import 'package:example/components/button_demo.dart';
+import 'package:example/components/language_demo.dart';
 import 'package:example/components/toast_demo.dart';
 import 'package:example/config/router.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         Router.actionSheet: (context) => ActionSheet(),
         Router.toast: (context) => Toast(),
         Router.button: (context) => ButtonDemo(),
+        Router.language: (context) => LanguageDemo(),
       },
     );
   }
@@ -53,6 +55,13 @@ class MyHomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('button'),
             onTap: () => Navigator.of(context).pushNamed(Router.button),
+          ),
+          Divider(color: Colors.grey),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.language, color: Colors.blue),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            title: Text('language'),
+            onTap: () => Navigator.of(context).pushNamed(Router.language),
           ),
           Divider(color: Colors.grey),
         ],

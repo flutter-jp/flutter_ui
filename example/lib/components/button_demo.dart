@@ -3,6 +3,25 @@ import 'package:flutter_ui/entity.dart';
 import 'package:flutter_ui/material.dart';
 
 class ButtonDemo extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey[350],
+      appBar: AppBar(
+        title: Text('button'),
+      ),
+      body: Column(
+        children: <Widget>[
+          _buildNormalButton(),
+          _buildShapeButtons(),
+          _buildOutlineButtons(),
+          _buildIconButtons()
+        ],
+      ),
+    );
+  }
+
   Widget _buildNormalButton() {
     return Wrap(
       children: <Widget>[
@@ -168,21 +187,4 @@ class ButtonDemo extends StatelessWidget {
     ]);
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[350],
-      appBar: AppBar(
-        title: Text('button'),
-      ),
-      body: Column(
-        children: <Widget>[
-          _buildNormalButton(),
-          _buildShapeButtons(),
-          _buildOutlineButtons(),
-          _buildIconButtons()
-        ],
-      ),
-    );
-  }
 }

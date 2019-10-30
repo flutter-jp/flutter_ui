@@ -12,8 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   webview_flutter: ^0.3.15+1
-#  cached_network_image: ^1.1.2+1
+#  cached_network_image: ^2.0.0-rc
   fluttertoast: ^3.1.3
+  font_awesome_flutter: ^8.5.0
 
 dev_dependencies:
   flutter_test:

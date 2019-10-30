@@ -31,3 +31,4 @@ export 'src/material/material_browser.dart';
 export 'src/material/material_steps.dart';
 export 'src/material/material_timeline.dart';
 export 'src/material/material_gmap.dart';
+export 'src/material/material_language_color.dart';
