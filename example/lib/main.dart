@@ -1,5 +1,6 @@
 import 'package:example/components/action_sheet_demo.dart';
 import 'package:example/components/button_demo.dart';
+import 'package:example/components/checklist_demo.dart';
 import 'package:example/components/language_demo.dart';
 import 'package:example/components/toast_demo.dart';
 import 'package:example/config/router.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         Router.toast: (context) => Toast(),
         Router.button: (context) => ButtonDemo(),
         Router.language: (context) => LanguageDemo(),
+        Router.checkList: (context) => CheckListDemo(),
       },
     );
   }
@@ -62,6 +64,14 @@ class MyHomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('language'),
             onTap: () => Navigator.of(context).pushNamed(Router.language),
+          ),
+          ///  check box list
+          Divider(color: Colors.grey),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.boxes, color: Colors.blue),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            title: Text('check box list'),
+            onTap: () => Navigator.of(context).pushNamed(Router.checkList),
           ),
           Divider(color: Colors.grey),
         ],

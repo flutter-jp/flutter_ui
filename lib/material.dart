@@ -18,7 +18,7 @@ export 'src/material/material_picker.dart';
 export 'src/material/material_pricing.dart';
 export 'src/material/material_tooltip.dart';
 export 'src/material/material_progress.dart';
-export 'src/material/material_radio.dart';
+export 'src/material/material_radiolist.dart';
 export 'src/material/material_rating.dart';
 export 'src/material/material_search.dart';
 export 'src/material/material_slider.dart';

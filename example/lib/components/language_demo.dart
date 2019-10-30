@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/entity.dart';
 import 'package:flutter_ui/material.dart';
 
 class LanguageDemo extends StatelessWidget {
@@ -16,7 +17,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Java'),
               MLanguageColor(
-                language: MLanguages.Java,
+                language: LanguageColors.Java,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -25,7 +26,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('C'),
               MLanguageColor(
-                language: MLanguages.CLanguage,
+                language: LanguageColors.CLanguage,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -34,7 +35,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Python'),
               MLanguageColor(
-                language: MLanguages.Python,
+                language: LanguageColors.Python,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -43,7 +44,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('C++'),
               MLanguageColor(
-                language: MLanguages.CPP,
+                language: LanguageColors.CPP,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -52,7 +53,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('C#'),
               MLanguageColor(
-                language: MLanguages.CSharp,
+                language: LanguageColors.CSharp,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -61,7 +62,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('ASP.NET'),
               MLanguageColor(
-                language: MLanguages.ASP,
+                language: LanguageColors.ASP,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -70,7 +71,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Javascript'),
               MLanguageColor(
-                language: MLanguages.JavaScript,
+                language: LanguageColors.JavaScript,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -79,7 +80,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Sql'),
               MLanguageColor(
-                language: MLanguages.SQL,
+                language: LanguageColors.SQL,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -88,7 +89,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('PHP'),
               MLanguageColor(
-                language: MLanguages.PHP,
+                language: LanguageColors.PHP,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -97,7 +98,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('ObjectC'),
               MLanguageColor(
-                language: MLanguages.ObjectiveC,
+                language: LanguageColors.ObjectiveC,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -106,7 +107,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Groovy'),
               MLanguageColor(
-                language: MLanguages.Groovy,
+                language: LanguageColors.Groovy,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -115,7 +116,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Swift'),
               MLanguageColor(
-                language: MLanguages.Swift,
+                language: LanguageColors.Swift,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -124,7 +125,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Ruby'),
               MLanguageColor(
-                language: MLanguages.Ruby,
+                language: LanguageColors.Ruby,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -133,7 +134,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Assembly'),
               MLanguageColor(
-                language: MLanguages.WebAssembly,
+                language: LanguageColors.WebAssembly,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -142,7 +143,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('R'),
               MLanguageColor(
-                language: MLanguages.R,
+                language: LanguageColors.R,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -151,7 +152,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Go'),
               MLanguageColor(
-                language: MLanguages.Go,
+                language: LanguageColors.Go,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -160,7 +161,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Pascal'),
               MLanguageColor(
-                language: MLanguages.Pascal,
+                language: LanguageColors.Pascal,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -169,7 +170,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('MATLAB'),
               MLanguageColor(
-                language: MLanguages.MATLAB,
+                language: LanguageColors.MATLAB,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -178,7 +179,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Perl'),
               MLanguageColor(
-                language: MLanguages.Perl,
+                language: LanguageColors.Perl,
                 margin: EdgeInsets.all(5),
               ),
             ],
@@ -187,7 +188,7 @@ class LanguageDemo extends StatelessWidget {
             children: <Widget>[
               Text('Kotlin'),
               MLanguageColor(
-                language: MLanguages.Kotlin,
+                language: LanguageColors.Kotlin,
                 margin: EdgeInsets.all(5),
               ),
             ],

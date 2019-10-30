@@ -3,4 +3,5 @@ class Router {
   static final String actionSheet = 'actionSheet';
   static final String button = 'button';
   static final String language = 'language';
+  static final String checkList = 'checkList';
 }
