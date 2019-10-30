@@ -1,4 +1,5 @@
 import 'package:example/components/action_sheet_demo.dart';
+import 'package:example/components/button_demo.dart';
 import 'package:example/components/toast_demo.dart';
 import 'package:example/config/router.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Router.actionSheet: (context) => ActionSheet(),
         Router.toast: (context) => Toast(),
+        Router.button: (context) => ButtonDemo(),
       },
     );
   }
@@ -44,6 +46,13 @@ class MyHomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('toast'),
             onTap: () => Navigator.of(context).pushNamed(Router.toast),
+          ),
+          Divider(color: Colors.grey),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.clipboardCheck, color: Colors.blue),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            title: Text('button'),
+            onTap: () => Navigator.of(context).pushNamed(Router.button),
           ),
           Divider(color: Colors.grey),
         ],
