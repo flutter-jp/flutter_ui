@@ -6,5 +6,5 @@
 
 - Let's Go!
 
-[GitHub](https://github.com/flutter-jp/flutter-ui)
+[GitHub](https://github.com/flutter-jp/flutter_ui)
 [Quick Start](README.md)

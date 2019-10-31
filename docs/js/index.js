@@ -6,7 +6,7 @@ if (typeof navigator.serviceWorker !== 'undefined') {
 // config
 window.$docsify = {
     name: 'flutter UI',
-    repo: 'https://github.com/flutter-jp/flutter-ui',
+    repo: 'https://github.com/flutter-jp/flutter_ui',
     // logo:'assets/images/avatar.png',
     coverpage: true,
     loadSidebar: true,
@@ -29,7 +29,7 @@ window.$docsify = {
         noData: 'No Result!'
     },
     plugins: [
-        EditOnGithubPlugin.create('https://github.com/flutter-jp/flutter-ui/blob/master/docs/'),
+        EditOnGithubPlugin.create('https://github.com/flutter-jp/flutter_ui/blob/master/docs/'),
         function (hook, vm) {
             hook.beforeEach(function (html) {
                 return html
@@ -58,7 +58,7 @@ window.$docsify = {
 const gitalk = new Gitalk({
     clientID: 'Iv1.921d3627ee94994c',
     clientSecret: 'afb80e1e4d60a398b54f4ea038a62f18157787c5',
-    repo: 'flutter-ui',
+    repo: 'flutter_ui',
     owner: 'ricoh-houko',
     admin: ['ricoh-houko,houko'],
     distractionFreeMode: false,
