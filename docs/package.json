@@ -1,0 +1,25 @@
+{
+  "name": "flutter_ui-pages",
+  "version": "1.0.0",
+  "description": "flutter UI library.",
+  "main": "index.html",
+  "dependencies": {
+    "docsify-cli": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docsify serve",
+    "open": "start http://localhost:3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flutter-jp/flutter_ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flutter-jp/flutter_ui/issues"
+  },
+  "homepage": "https://github.com/flutter-jp/flutter_ui#readme"
+}
