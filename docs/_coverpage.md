@@ -1,11 +1,10 @@
-![logo](images/logo.png)
+![logo](../image/banner.png)
 
-# flutter学习app
+# flutter UI
 
-> 一个使用flutter开发的用于学习flutter的app
+> A Useful UI for Flutter Application Build.
 
-- 学习flutter最快的办法就是用flutter做一个学习flutter的app
-- 让我们现在开始吧
+- Let's Go!
 
-[GitHub](https://github.com/houko/flutter-study-app)
-[开始使用](README.md)
+[GitHub](https://github.com/flutter-jp/flutter-ui)
+[Quick Start](README.md)
