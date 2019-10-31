@@ -1,4 +1,4 @@
-![logo](../image/banner.png)
+![logo](image/banner.png)
 
 # flutter UI
 
