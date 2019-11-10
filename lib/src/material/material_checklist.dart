@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/src/entity/check_item.dart';
 
+/// 需要Material 父组件，比如父组件加个Scaffold
 class MCheckList extends StatefulWidget {
   final String title;
   final List<CheckItem> items;

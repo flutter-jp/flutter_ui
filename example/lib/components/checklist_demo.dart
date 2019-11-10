@@ -10,11 +10,12 @@ class CheckListDemo extends StatelessWidget {
       CheckItem.build('banana'),
       CheckItem.build('orange', checked: true),
     ];
-    return Container(
-      child: Center(
-        child: MCheckList(
-          items: items,
-        ),
+    return Scaffold(
+      appBar: AppBar(title: Text('CheckBox'),),
+      body: Container(
+          child: MCheckList(
+            items: items,
+          ),
       ),
     );
   }
