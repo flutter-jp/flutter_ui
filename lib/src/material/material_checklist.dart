@@ -6,10 +6,12 @@ class MCheckList extends StatefulWidget {
   final String title;
   final List<CheckItem> items;
   final Direction direction;
+  final bool withTitle;
 
   MCheckList({
     @required this.items,
     this.title = '',
+    this.withTitle = false,
     this.direction = Direction.Vertical,
   });
 
@@ -33,11 +35,19 @@ class _MCheckListState extends State<MCheckList> {
   }
 
   // build check box list
-  List<Checkbox> _buildCheckList() {
+  List<Widget> _buildCheckList() {
     return widget.items.map((CheckItem item) {
-      return Checkbox(
-          value: item.checked,
-          onChanged: (bool changed) => _onChange(changed, item));
+      if (widget.withTitle) {
+        return CheckboxListTile(
+          secondary: Icon(item.icon),
+            value: item.checked,
+            title: Text(item.label ?? ''),
+            onChanged: (bool changed) => _onChange(changed, item));
+      } else {
+        return Checkbox(
+            value: item.checked,
+            onChanged: (bool changed) => _onChange(changed, item));
+      }
     }).toList();
   }
 
