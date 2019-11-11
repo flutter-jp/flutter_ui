@@ -1,4 +1,4 @@
-import 'package:example/components/BadgeDemo.dart';
+import 'package:example/components/badge_demo.dart';
 import 'package:example/components/action_sheet_demo.dart';
 import 'package:example/components/browser_demo.dart';
 import 'package:example/components/button_demo.dart';
