@@ -53,41 +53,41 @@ class MButton extends RaisedButton {
 
     // button color depend on button type
     if (buttonType == ButtonType.Dark) {
-      buttonStyle.bgColor = ButtonColor.darkBgColor;
-      buttonStyle.fontColor = ButtonColor.darkFontColor;
-      buttonStyle.hoverColor = ButtonColor.darkBgHoverColor;
-      buttonStyle.disabledColor = ButtonColor.darkBgDisabledColor;
-      buttonStyle.iconColor = ButtonColor.darkFontColor;
+      buttonStyle.bgColor = MColor.darkBgColor;
+      buttonStyle.fontColor = MColor.darkFontColor;
+      buttonStyle.hoverColor = MColor.darkBgHoverColor;
+      buttonStyle.disabledColor = MColor.darkBgDisabledColor;
+      buttonStyle.iconColor = MColor.darkFontColor;
     } else if (buttonType == ButtonType.Light) {
-      buttonStyle.bgColor = ButtonColor.lightBgColor;
-      buttonStyle.fontColor = ButtonColor.lightFontColor;
-      buttonStyle.hoverColor = ButtonColor.lightBgHoverColor;
-      buttonStyle.disabledColor = ButtonColor.lightBgDisabledColor;
-      buttonStyle.iconColor = ButtonColor.lightFontColor;
+      buttonStyle.bgColor = MColor.lightBgColor;
+      buttonStyle.fontColor = MColor.lightFontColor;
+      buttonStyle.hoverColor = MColor.lightBgHoverColor;
+      buttonStyle.disabledColor = MColor.lightBgDisabledColor;
+      buttonStyle.iconColor = MColor.lightFontColor;
     } else if (buttonType == ButtonType.DANGER) {
-      buttonStyle.bgColor = ButtonColor.dangerBgColor;
-      buttonStyle.fontColor = ButtonColor.dangerFontColor;
-      buttonStyle.hoverColor = ButtonColor.dangerHoverBgColor;
-      buttonStyle.disabledColor = ButtonColor.darkBgDisabledColor;
-      buttonStyle.iconColor = ButtonColor.dangerFontColor;
+      buttonStyle.bgColor = MColor.dangerBgColor;
+      buttonStyle.fontColor = MColor.dangerFontColor;
+      buttonStyle.hoverColor = MColor.dangerHoverBgColor;
+      buttonStyle.disabledColor = MColor.darkBgDisabledColor;
+      buttonStyle.iconColor = MColor.dangerFontColor;
     } else if (buttonType == ButtonType.WARNING) {
-      buttonStyle.bgColor = ButtonColor.warningBgColor;
-      buttonStyle.fontColor = ButtonColor.warningFontColor;
-      buttonStyle.hoverColor = ButtonColor.warningHoverBgColor;
-      buttonStyle.disabledColor = ButtonColor.warningDisabledBgColor;
-      buttonStyle.iconColor = ButtonColor.warningFontColor;
+      buttonStyle.bgColor = MColor.warningBgColor;
+      buttonStyle.fontColor = MColor.warningFontColor;
+      buttonStyle.hoverColor = MColor.warningHoverBgColor;
+      buttonStyle.disabledColor = MColor.warningDisabledBgColor;
+      buttonStyle.iconColor = MColor.warningFontColor;
     } else if (buttonType == ButtonType.INFO) {
-      buttonStyle.bgColor = ButtonColor.infoBgColor;
-      buttonStyle.fontColor = ButtonColor.infoFontColor;
-      buttonStyle.hoverColor = ButtonColor.infoHoverBgColor;
-      buttonStyle.disabledColor = ButtonColor.infoDisabledBgColor;
-      buttonStyle.iconColor = ButtonColor.infoFontColor;
+      buttonStyle.bgColor = MColor.infoBgColor;
+      buttonStyle.fontColor = MColor.infoFontColor;
+      buttonStyle.hoverColor = MColor.infoHoverBgColor;
+      buttonStyle.disabledColor = MColor.infoDisabledBgColor;
+      buttonStyle.iconColor = MColor.infoFontColor;
     } else if (buttonType == ButtonType.SUCCESS) {
-      buttonStyle.bgColor = ButtonColor.successBgColor;
-      buttonStyle.fontColor = ButtonColor.successFontColor;
-      buttonStyle.hoverColor = ButtonColor.successHoverBgColor;
-      buttonStyle.disabledColor = ButtonColor.successDisabledBgColor;
-      buttonStyle.iconColor = ButtonColor.successFontColor;
+      buttonStyle.bgColor = MColor.successBgColor;
+      buttonStyle.fontColor = MColor.successFontColor;
+      buttonStyle.hoverColor = MColor.successHoverBgColor;
+      buttonStyle.disabledColor = MColor.successDisabledBgColor;
+      buttonStyle.iconColor = MColor.successFontColor;
     }
 
     // button shape depend on button shape
@@ -114,39 +114,39 @@ class MButton extends RaisedButton {
       // button outline depend on outline
       if (buttonOutLine == ButtonOutLine.DARK) {
         buttonStyle.shape = StadiumBorder(
-          side: BorderSide(color: ButtonColor.darkBgColor, width: borderWidth),
+          side: BorderSide(color: MColor.darkBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.LIGHT) {
         buttonStyle.shape = StadiumBorder(
-          side: BorderSide(color: ButtonColor.lightBgColor, width: borderWidth),
+          side: BorderSide(color: MColor.lightBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.DANGER) {
         buttonStyle.shape = StadiumBorder(
           side:
-              BorderSide(color: ButtonColor.dangerBgColor, width: borderWidth),
+              BorderSide(color: MColor.dangerBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.SUCCESS) {
         buttonStyle.shape = StadiumBorder(
           side:
-              BorderSide(color: ButtonColor.successBgColor, width: borderWidth),
+              BorderSide(color: MColor.successBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.INFO) {
         buttonStyle.shape = StadiumBorder(
-          side: BorderSide(color: ButtonColor.infoBgColor, width: borderWidth),
+          side: BorderSide(color: MColor.infoBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.WARNING) {
         buttonStyle.shape = StadiumBorder(
           side:
-              BorderSide(color: ButtonColor.warningBgColor, width: borderWidth),
+              BorderSide(color: MColor.warningBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.COLORFUL) {
         buttonStyle.shape = Border(
-          top: BorderSide(color: ButtonColor.dangerBgColor, width: borderWidth),
-          left: BorderSide(color: ButtonColor.infoBgColor, width: borderWidth),
+          top: BorderSide(color: MColor.dangerBgColor, width: borderWidth),
+          left: BorderSide(color: MColor.infoBgColor, width: borderWidth),
           right:
-              BorderSide(color: ButtonColor.warningBgColor, width: borderWidth),
+              BorderSide(color: MColor.warningBgColor, width: borderWidth),
           bottom:
-              BorderSide(color: ButtonColor.successBgColor, width: borderWidth),
+              BorderSide(color: MColor.successBgColor, width: borderWidth),
         );
       }
     }

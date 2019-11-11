@@ -1,3 +1,4 @@
+import 'package:example/components/BadgeDemo.dart';
 import 'package:example/components/action_sheet_demo.dart';
 import 'package:example/components/button_demo.dart';
 import 'package:example/components/checklist_demo.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         Router.button: (context) => ButtonDemo(),
         Router.language: (context) => LanguageDemo(),
         Router.checkList: (context) => CheckListDemo(),
+        Router.badge: (context) => BadgeDemo(),
       },
     );
   }
@@ -72,6 +74,13 @@ class MyHomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('check box list'),
             onTap: () => Navigator.of(context).pushNamed(Router.checkList),
+          ),
+          Divider(color: Colors.grey),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.idBadge, color: Colors.blue),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            title: Text('badge'),
+            onTap: () => Navigator.of(context).pushNamed(Router.badge),
           ),
           Divider(color: Colors.grey),
         ],
