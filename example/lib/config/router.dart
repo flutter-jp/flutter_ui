@@ -5,4 +5,5 @@ class Router {
   static final String language = 'language';
   static final String checkList = 'checkList';
   static final String badge = 'badge';
+  static final String browser = 'browser';
 }

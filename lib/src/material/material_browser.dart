@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class MBrowser extends StatelessWidget {
-  const MBrowser({Key key, this.url, this.title}) : super(key: key);
+  const MBrowser({Key key, @required this.url, this.title}) : super(key: key);
 
   final String url;
   final String title;
@@ -18,5 +18,14 @@ class MBrowser extends StatelessWidget {
         javascriptMode: JavascriptMode.unrestricted,
       ),
     );
+  }
+
+  static void open(BuildContext context, String title, String url) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+      return MBrowser(
+        title: title,
+        url: url,
+      );
+    }));
   }
 }
