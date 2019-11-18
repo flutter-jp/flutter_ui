@@ -59,7 +59,7 @@ const gitalk = new Gitalk({
     clientID: 'Iv1.921d3627ee94994c',
     clientSecret: 'afb80e1e4d60a398b54f4ea038a62f18157787c5',
     repo: 'flutter_ui',
-    owner: 'houko',
-    admin: ['houko,houko'],
+    owner: 'ricoh-houko',
+    admin: ['ricoh-houko,houko'],
     distractionFreeMode: false,
 });
