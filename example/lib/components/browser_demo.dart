@@ -21,13 +21,15 @@ class BrowserDemo extends StatelessWidget {
             MButton(
               title: 'flutter_ui',
               callback: () => {
-                MBrowser.open(context, 'flutter_ui', 'https://ui.flutter-jp.com')
+                MBrowser.open(
+                    context, 'flutter_ui', 'https://ui.flutter-jp.com')
               },
             ),
             MButton(
               title: 'github',
               callback: () => {
-                MBrowser.open(context, 'google', 'https://github.com/flutter-jp/flutter_ui')
+                MBrowser.open(context, 'google',
+                    'https://github.com/flutter-jp/flutter_ui')
               },
             )
           ],

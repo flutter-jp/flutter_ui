@@ -3,8 +3,7 @@ import 'package:flutter_ui/entity.dart';
 import 'package:flutter_ui/material.dart';
 import 'package:flutter_ui/src/entity/button_type.dart';
 
-// 参照　https://qiita.com/coka__01/items/30716f42e4a909334c9f　　　
-// 　　　https://www.primefaces.org/primeng-7.1.3/#/button
+/// 参照　https://qiita.com/coka__01/items/30716f42e4a909334c9f & https://www.primefaces.org/primeng-7.1.3/#/button
 
 class MButton extends RaisedButton {
   final String title;
@@ -122,13 +121,11 @@ class MButton extends RaisedButton {
         );
       } else if (buttonOutLine == ButtonOutLine.DANGER) {
         buttonStyle.shape = StadiumBorder(
-          side:
-              BorderSide(color: MColor.dangerBgColor, width: borderWidth),
+          side: BorderSide(color: MColor.dangerBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.SUCCESS) {
         buttonStyle.shape = StadiumBorder(
-          side:
-              BorderSide(color: MColor.successBgColor, width: borderWidth),
+          side: BorderSide(color: MColor.successBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.INFO) {
         buttonStyle.shape = StadiumBorder(
@@ -136,17 +133,14 @@ class MButton extends RaisedButton {
         );
       } else if (buttonOutLine == ButtonOutLine.WARNING) {
         buttonStyle.shape = StadiumBorder(
-          side:
-              BorderSide(color: MColor.warningBgColor, width: borderWidth),
+          side: BorderSide(color: MColor.warningBgColor, width: borderWidth),
         );
       } else if (buttonOutLine == ButtonOutLine.COLORFUL) {
         buttonStyle.shape = Border(
           top: BorderSide(color: MColor.dangerBgColor, width: borderWidth),
           left: BorderSide(color: MColor.infoBgColor, width: borderWidth),
-          right:
-              BorderSide(color: MColor.warningBgColor, width: borderWidth),
-          bottom:
-              BorderSide(color: MColor.successBgColor, width: borderWidth),
+          right: BorderSide(color: MColor.warningBgColor, width: borderWidth),
+          bottom: BorderSide(color: MColor.successBgColor, width: borderWidth),
         );
       }
     }

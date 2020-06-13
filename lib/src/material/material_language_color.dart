@@ -27,4 +27,3 @@ class MLanguageColor extends StatelessWidget {
     );
   }
 }
-

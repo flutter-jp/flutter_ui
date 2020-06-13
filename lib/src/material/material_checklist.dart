@@ -39,7 +39,7 @@ class _MCheckListState extends State<MCheckList> {
     return widget.items.map((CheckItem item) {
       if (widget.withTitle) {
         return CheckboxListTile(
-          secondary: Icon(item.icon),
+            secondary: Icon(item.icon),
             value: item.checked,
             title: Text(item.label ?? ''),
             onChanged: (bool changed) => _onChange(changed, item));

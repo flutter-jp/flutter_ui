@@ -3,7 +3,6 @@ import 'package:flutter_ui/entity.dart';
 import 'package:flutter_ui/material.dart';
 
 class ButtonDemo extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -186,5 +185,4 @@ class ButtonDemo extends StatelessWidget {
       ),
     ]);
   }
-
 }
