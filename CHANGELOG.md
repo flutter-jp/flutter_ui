@@ -1,3 +1,3 @@
-## [0.0.9] - TODO: Add release date.
+## [0.0.10] - 2020/06/13.
 
-* add ui widget and description.
+* update to 0.1.0.
