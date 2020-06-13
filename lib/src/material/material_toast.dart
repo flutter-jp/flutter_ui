@@ -31,7 +31,7 @@ class MToast {
         msg: msg,
         fontSize: fontSize,
         gravity: gravity,
-        timeInSecForIos: time,
+        timeInSecForIosWeb: time,
         toastLength: toastLength,
         backgroundColor: backColor,
         textColor: textColor);
